@@ -12,7 +12,7 @@ const TemperaturePage = async ({
   if (resolved?.lat && resolved?.lon) {
     return <TemperatureComponent lat={resolved.lat} lon={resolved.lon} />;
   } else {
-    return <NoLocationInfo />;
+    return <NoLocationInfo location={location}/>;
   }
 };
 
